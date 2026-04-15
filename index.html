@@ -38,6 +38,7 @@ body {
   padding: 60px;
   animation: fadeIn 0.6s ease;
 }
+
 .slide.active { display: flex; flex-direction: column; justify-content: center; }
 
 @keyframes fadeIn {
@@ -54,6 +55,7 @@ body {
   gap: 12px;
   z-index: 100;
 }
+
 .dot {
   width: 12px; height: 12px;
   border-radius: 50%;
@@ -62,6 +64,7 @@ body {
   cursor: none;
   transition: background 0.3s;
 }
+
 .dot.active { background: #8b0000; }
 
 #arrow-left, #arrow-right {
@@ -76,6 +79,7 @@ body {
   opacity: 0.6;
   transition: opacity 0.3s;
 }
+
 #arrow-left:hover, #arrow-right:hover { opacity: 1; }
 #arrow-left { left: 20px; }
 #arrow-right { right: 20px; }
@@ -90,15 +94,15 @@ body {
   z-index: 100;
 }
 
-#slide-1  { background: radial-gradient(ellipse at center, #1a0505 0%, #0a0000 100%); }
-#slide-2  { background: radial-gradient(ellipse at top left, #0d0d0d 0%, #1a0a0a 100%); }
-#slide-3  { background: linear-gradient(135deg, #0a0a0a 0%, #150505 100%); }
-#slide-4  { background: radial-gradient(ellipse at bottom right, #100505 0%, #0a0a0a 100%); }
-#slide-5  { background: linear-gradient(to bottom, #0a0000 0%, #0f0f0f 100%); }
-#slide-6  { background: radial-gradient(ellipse at center, #0d0505 0%, #0a0a0a 100%); }
-#slide-7  { background: linear-gradient(135deg, #0a0a0a 0%, #120808 100%); }
-#slide-8  { background: radial-gradient(ellipse at top, #0a0a0a 0%, #0d0505 100%); }
-#slide-9  { background: radial-gradient(ellipse at center, #1a0000 0%, #050505 100%); }
+#slide-1 { background: radial-gradient(ellipse at center, #1a0505 0%, #0a0000 100%); }
+#slide-2 { background: radial-gradient(ellipse at top left, #0d0d0d 0%, #1a0a0a 100%); }
+#slide-3 { background: linear-gradient(135deg, #0a0a0a 0%, #150505 100%); }
+#slide-4 { background: radial-gradient(ellipse at bottom right, #100505 0%, #0a0a0a 100%); }
+#slide-5 { background: linear-gradient(to bottom, #0a0000 0%, #0f0f0f 100%); }
+#slide-6 { background: radial-gradient(ellipse at center, #0d0505 0%, #0a0a0a 100%); }
+#slide-7 { background: linear-gradient(135deg, #0a0a0a 0%, #120808 100%); }
+#slide-8 { background: radial-gradient(ellipse at top, #0a0a0a 0%, #0d0505 100%); }
+#slide-9 { background: radial-gradient(ellipse at center, #1a0000 0%, #050505 100%); }
 #slide-10 { background: linear-gradient(to bottom, #0a0000, #050505); }
 
 .slide-title {
@@ -109,6 +113,7 @@ body {
   letter-spacing: 3px;
   line-height: 1.2;
 }
+
 .slide-subtitle { font-size: 22px; color: #c9a84c; margin-bottom: 30px; letter-spacing: 2px; }
 .slide-body { font-size: 18px; line-height: 1.8; color: #d4c5a9; max-width: 850px; }
 .slide-label { font-size: 12px; letter-spacing: 4px; color: #8b0000; text-transform: uppercase; margin-bottom: 10px; }
@@ -138,8 +143,11 @@ body {
 }
 
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 20px; }
+
 .col-box { background: rgba(139,0,0,0.06); border: 1px solid rgba(139,0,0,0.3); padding: 25px; }
+
 .col-box h3 { color: #8b0000; margin-bottom: 10px; font-size: 18px; letter-spacing: 2px; }
+
 .col-box p { font-size: 15px; line-height: 1.7; color: #c4b49a; }
 
 .thesis-box {
@@ -149,6 +157,7 @@ body {
   margin: 20px 0;
   max-width: 900px;
 }
+
 .thesis-box p { font-size: 20px; line-height: 1.8; color: #e8d5b0; font-style: italic; }
 
 .hero-a {
@@ -173,6 +182,7 @@ body {
 }
 
 .glitch { position: relative; }
+
 .glitch::before {
   content: attr(data-text);
   position: absolute;
@@ -182,32 +192,12 @@ body {
   clip-path: polygon(0 30%, 100% 30%, 100% 50%, 0 50%);
   animation: glitch1 3s infinite;
 }
+
 @keyframes glitch1 {
   0%, 90%, 100% { transform: translateX(0); }
   92% { transform: translateX(-3px); }
   94% { transform: translateX(3px); }
   96% { transform: translateX(-2px); }
-}
-
-.works-cited-btn {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 18px 50px;
-  background: transparent;
-  border: 2px solid #8b0000;
-  color: #c9a84c;
-  font-size: 18px;
-  letter-spacing: 3px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: 'Georgia', serif;
-  transition: all 0.3s ease;
-  cursor: none;
-}
-.works-cited-btn:hover {
-  background: rgba(139,0,0,0.2);
-  color: #fff;
-  border-color: #c9a84c;
 }
 
 .glow-line {
@@ -218,6 +208,7 @@ body {
 }
 
 .stat-row { display: flex; gap: 30px; margin-top: 20px; }
+
 .stat-box {
   flex: 1;
   background: rgba(139,0,0,0.08);
@@ -225,16 +216,27 @@ body {
   padding: 20px;
   text-align: center;
 }
+
 .stat-number { font-size: 40px; color: #8b0000; font-weight: bold; }
 .stat-label { font-size: 13px; color: #c9a84c; letter-spacing: 2px; margin-top: 5px; }
+
+.works-cited-frame {
+  width: 100%;
+  max-width: 900px;
+  height: 70vh;
+  border: 2px solid #8b0000;
+  background: #ffffff;
+  margin-top: 20px;
+  cursor: auto;
+}
 </style>
 </head>
 <body>
 
 <div id="cursor-follower">A</div>
 <div id="slide-counter">01 / 10</div>
-<div id="arrow-left">&#8592;</div>
-<div id="arrow-right">&#8594;</div>
+<div id="arrow-left">←</div>
+<div id="arrow-right">→</div>
 <div id="nav-dots"></div>
 
 <!-- SLIDE 1 - TITLE -->
@@ -244,7 +246,7 @@ body {
   <h1 class="slide-title glitch" data-text="The Value of Shame">The Value of Shame</h1>
   <h2 class="slide-subtitle">In Modern Society</h2>
   <div class="divider"></div>
-  <p class="slide-body">Does shame still have a place in the world we live in today?<br>
+  <p class="slide-body">Does shame still have a place in the world we live in today?<br><br>
   Is it a tool for growth or a weapon for destruction?</p>
 </div>
 
@@ -320,4 +322,9 @@ body {
       <div class="stat-label">of people say cancel culture goes too far</div>
     </div>
     <div class="stat-box">
-      <div class
+      <div class="stat-number">∞</div>
+      <div class="stat-label">the internet never forgets</div>
+    </div>
+  </div>
+  <div class="quote-box" style="margin-top:30px;">
+    "Cancel
